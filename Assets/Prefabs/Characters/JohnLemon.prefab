@@ -1149,10 +1149,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4257345779609502301}
-  - component: {fileID: 4257345779602353589}
   - component: {fileID: 1897755434503374732}
   - component: {fileID: 2671619059777356967}
-  - component: {fileID: 4405404267955216496}
+  - component: {fileID: 4435181210011948578}
+  - component: {fileID: 5113968929009967675}
   m_Layer: 0
   m_Name: JohnLemon
   m_TagString: Untagged
@@ -1176,25 +1176,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4257345779602353589
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4257345779609738877}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b44f3940c4940544a8c2c6aee5fa086f, type: 3}
-  m_Controller: {fileID: 9100000, guid: 2ab8212edb0562e40af54565ca6c993a, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 1
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!54 &1897755434503374732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1225,7 +1206,26 @@ CapsuleCollider:
   m_Height: 1.4750482
   m_Direction: 1
   m_Center: {x: 0, y: 0.6987274, z: 0}
---- !u!114 &4405404267955216496
+--- !u!95 &4435181210011948578
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4257345779609738877}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b44f3940c4940544a8c2c6aee5fa086f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 2ab8212edb0562e40af54565ca6c993a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5113968929009967675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -38,7 +38,7 @@ public class PlayerMovemnet : MonoBehaviour
 
         // Assign rotation towards move direction
         Vector3 desiredDirection = Vector3.RotateTowards(transform.position, moveDirection,
-            turnSpeed = Time.deltaTime, 0f);
+            turnSpeed * Time.deltaTime, 0f);
         rotation = Quaternion.LookRotation(desiredDirection);
     }
 
