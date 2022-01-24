@@ -659,6 +659,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1450942071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4257345779609738877, guid: 9a01a75a30d8e20499811203794b87aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1063585143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1450942076 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4257345779609502301, guid: 9a01a75a30d8e20499811203794b87aa,
@@ -763,6 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1649384234}
   - component: {fileID: 1649384233}
+  - component: {fileID: 1649384235}
   m_Layer: 0
   m_Name: GameEnding
   m_TagString: Untagged
@@ -797,6 +804,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1649384235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649384232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36ab8f87cdcfa94e9ef1890587e3a03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1
+  displayImageDuration: 1
+  player: {fileID: 1450942071}
+  exitBackgroundImageCanvasGroup: {fileID: 1536647223}
 --- !u!1 &1674855570
 GameObject:
   m_ObjectHideFlags: 0
