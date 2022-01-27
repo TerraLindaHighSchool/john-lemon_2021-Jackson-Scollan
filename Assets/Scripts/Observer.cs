@@ -20,7 +20,7 @@ public class Observer : MonoBehaviour
     {
         if (other.transform == player)
         {
-            //m_IsPlayerInRange = false;
+            m_IsPlayerInRange = false;
         }
     }
     void Update()
