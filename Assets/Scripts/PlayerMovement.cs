@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator animator;
     private Rigidbody rb;
+    AudioSource m_AudioSource;
     private Vector3 moveDirection;
     private Quaternion rotation;
     private bool isWalking;
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         rotation = Quaternion.identity;
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +38,18 @@ public class PlayerMovement : MonoBehaviour
         // Set animatorto walking or idle depending on user input
         isWalking = !(Mathf.Approximately(horizontal, 0f) && Mathf.Approximately(vertical, 0f));
         animator.SetBool("IsWalking", isWalking);
+
+        if (isWalking)
+        {
+            if (!m_AudioSource.isPlaying)
+            {
+                m_AudioSource.Play();
+            }
+        }
+        else
+        {
+            m_AudioSource.Stop();
+        }
 
         // Assign rotation towards move direction
         Vector3 desiredDirection = Vector3.RotateTowards(transform.forward, moveDirection,
