@@ -10,8 +10,12 @@ public class Spider : MonoBehaviour
 
     int m_CurrentWaypointIndex;
 
+    
+   
+
     void Update()
     {
         spider.SetDestination(player.position);
     }
+
 }
