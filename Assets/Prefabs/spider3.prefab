@@ -100,7 +100,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 414836}
-  - component: {fileID: 11179858}
   - component: {fileID: 5625988555722455}
   - component: {fileID: 7813833802645371742}
   - component: {fileID: 2471782907897250391}
@@ -127,26 +126,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &11179858
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105728}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400010, guid: 7b12ff0838c1bfc46970414ffe81e813, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 7b12ff0838c1bfc46970414ffe81e813, type: 3}
-  - {fileID: 7400004, guid: 7b12ff0838c1bfc46970414ffe81e813, type: 3}
-  - {fileID: 7400006, guid: 7b12ff0838c1bfc46970414ffe81e813, type: 3}
-  - {fileID: 7400008, guid: 7b12ff0838c1bfc46970414ffe81e813, type: 3}
-  - {fileID: 7400010, guid: 7b12ff0838c1bfc46970414ffe81e813, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 1
 --- !u!136 &5625988555722455
 CapsuleCollider:
   m_ObjectHideFlags: 0
