@@ -25,4 +25,6 @@ public class Skeleton : MonoBehaviour
             enemy.SetDestination(moveWaypoint[m_CurrentWaypointIndex].position);
         }
     }
+
+ 
 }
