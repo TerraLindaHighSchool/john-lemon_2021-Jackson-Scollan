@@ -25,8 +25,10 @@ public class Observer : MonoBehaviour
     }
     void Update()
     {
+        
         if (m_IsPlayerInRange)
         {
+            gameEnding.timer.gameOver = true;
             Vector3 direction = player.position - transform.position + Vector3.up;
             Ray ray = new Ray(transform.position, direction);
             RaycastHit raycastHit;

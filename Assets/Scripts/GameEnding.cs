@@ -13,6 +13,7 @@ public class GameEnding : MonoBehaviour
     public AudioSource exitAudio;
     public CanvasGroup caughtBackgroundImageCanvasGroup;
     public AudioSource caughtAudio;
+    public Timer timer;
 
     bool m_IsPlayerAtExit;
     bool m_IsPlayerCaught;
@@ -24,6 +25,11 @@ public class GameEnding : MonoBehaviour
         if (other.gameObject == player)
         {
             m_IsPlayerAtExit = true;
+        }
+
+        if (other.gameObject.CompareTag("End"))
+        {
+            timer.gameOver = true;
         }
     }
 
@@ -46,6 +52,7 @@ public class GameEnding : MonoBehaviour
 
     void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
     {
+        
         if (!m_HasAudioPlayed)
         {
             audioSource.Play();
